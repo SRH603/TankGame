@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1642065420b8e4bdc99c30ab877fd2f7, type: 3}
+  m_Name: WaveConfigs_Num3 1
+  m_EditorClassIdentifier: 
+  numOfEnemies: 5
+  tankConfigs:
+  - {fileID: 11400000, guid: 8a594a9649eb04f39930699268a21ca4, type: 2}
+  - {fileID: 11400000, guid: 2d6dde67fd9fc4a4d90b68a925a1cfbc, type: 2}
+  - {fileID: 11400000, guid: 17ffeff9bba01488ba8124343a9e56e9, type: 2}
+  - {fileID: 11400000, guid: 575678538e30547688912a7926312ea3, type: 2}
+  - {fileID: 11400000, guid: 6955dd8aca03749a5aa293d01c5f6322, type: 2}

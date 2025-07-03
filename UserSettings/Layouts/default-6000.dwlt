@@ -275,8 +275,8 @@ MonoBehaviour:
     y: 0
     width: 334.5
     height: 799
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -967,7 +967,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.3556151, y: -0.62291855, z: 0.37875834, w: -0.58485556}
     speed: 2
-    m_Value: {x: -0.35561448, y: -0.6229174, z: 0.37875766, w: -0.5848545}
+    m_Value: {x: 0.35561514, y: 0.62291855, z: -0.37875834, w: 0.58485556}
   m_Size:
     m_Target: 19.716274
     speed: 2
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 102
+    y: 24
     width: 263.5
     height: 488.5
   m_SerializedDataModeController:
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 616.5
+    y: 538.5
     width: 1176.5
     height: 258.5
   m_SerializedDataModeController:
@@ -1206,7 +1206,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 97.5}
     m_SelectedIDs: 3ec20000
     m_LastClickedID: 49726
-    m_ExpandedIDs: 0000000096c1000098c100009ac100009cc100009ec10000a0c10000a2c1000040c2000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000a8c90000aac90000acc90000aec90000b0c90000b2c90000b4c90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1235,7 +1235,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000096c1000098c100009ac100009cc100009ec10000a0c10000a2c10000
+    m_ExpandedIDs: 00000000a8c90000aac90000acc90000aec90000b0c90000b2c90000b4c90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1387,8 +1387,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1177.5
-    y: 102
+    x: 1178.5
+    y: 24
     width: 333.5
     height: 773
   m_SerializedDataModeController:
@@ -1436,8 +1436,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 264.5
-    y: 102
+    x: 265.5
+    y: 24
     width: 911
     height: 488.5
   m_SerializedDataModeController:

@@ -53,6 +53,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/C5/Scenes/2_End.unity
     guid: 7db170c62f9a0e5408fa99ef8291931d
+  - enabled: 1
+    path: Assets/Scenes/4_NetworkGame.unity
+    guid: 52db01a484dd1470f9ee5b45beddbfea
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

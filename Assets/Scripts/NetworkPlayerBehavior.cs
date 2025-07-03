@@ -1,14 +1,17 @@
 using TMPro;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NetworkPlayerBehavior : NetworkBehaviour
 {
+    [SerializeField] GameObject networkPlayerTankTemplate;
     public override void OnNetworkSpawn()
     {
         if (IsOwner)
         {
             RegisterPlayerToLobbyListRpc(new RpcParams());
+            NetworkManager.Singleton.SceneManager.OnSceneEvent += SceneManager_onSceneEvent;
         }
     }
 
@@ -24,4 +27,27 @@ public class NetworkPlayerBehavior : NetworkBehaviour
     {
         GameObject.Find("PlayerListText").GetComponent<TMP_Text>().text = newListText;
     }
+
+    [Rpc(SendTo.Server)]
+    private void SpawnInNetworkedPlayerTankRpc(RpcParams rpcParams)
+    {
+        GameObject newTank = Instantiate(networkPlayerTankTemplate);
+        newTank.GetComponent<NetworkObject>().SpawnWithOwnership(rpcParams.Receive.SenderClientId);
+    }
+
+    private void SceneManager_onSceneEvent(SceneEvent sceneEvent)
+    {
+        if (sceneEvent.SceneEventType == SceneEventType.LoadComplete)
+        {
+            if (SceneManager.GetActiveScene().name == "4_NetworkGame")
+            {
+                if (IsOwner)
+                {
+                    SpawnInNetworkedPlayerTankRpc(new RpcParams());
+                }
+            }
+                
+        }
+    }
+    
 }

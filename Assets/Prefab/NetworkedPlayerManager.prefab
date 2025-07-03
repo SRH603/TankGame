@@ -66,3 +66,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ce7c50095504834929db46c62bf240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  networkPlayerTankTemplate: {fileID: 2557748845991662008, guid: ab988a7ce845743b98fe37c50ddb11cd, type: 3}

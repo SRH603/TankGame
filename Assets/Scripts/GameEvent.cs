@@ -28,6 +28,12 @@ public class GameEvent : MonoBehaviour
         NetworkManager.Singleton.StartClient();
     }
 
+    public void StartMultiplayerGame()
+    {
+        GameManager.instance.isMultiplayer = true;
+        NetworkManager.Singleton.SceneManager.LoadScene("4_NetworkGame", UnityEngine.SceneManagement.LoadSceneMode.Single);
+    }
+    
     public void QuitGame()
     {
         Application.Quit();

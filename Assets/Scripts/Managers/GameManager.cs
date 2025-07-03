@@ -24,6 +24,7 @@ public enum GameState
     GamePlay = 1,
     End = 2,
     Multiplayer = 3,
+    MultiplayerGame=4,
     Num
 }
 
@@ -36,6 +37,7 @@ public enum SceneType
     Game = 1,
     End = 2,
     Multiplayer = 3,
+    MultiplayerGame=4,
     Num
 }
 
@@ -67,6 +69,8 @@ public class GameManager : MonoBehaviour
 
     public GameData CurrentGameData { get; set; }
     private GameDataSystem gameDataSystem;
+
+    public bool isMultiplayer;
 
     public void RegisterSceneName(SceneType type, string sceneName)
     {
